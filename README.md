@@ -196,7 +196,7 @@ That's because:
     class Bar(Foo):
         y: int
 
-    print(type(Bar))  # type
+    print(type(Bar))  # <class 'type'>
     ```
 
     which _is_ correct and expected, because `Foo` is a namedtuple (and its metaclass is `type` as well).
