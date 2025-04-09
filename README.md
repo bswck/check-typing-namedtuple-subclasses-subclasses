@@ -25,7 +25,7 @@ There’s no clear, compelling use case that isn’t better served by dataclasse
 
 I expect this experiment to end up in
 - the class statement with inheritance from a typed namedtuple to fail with a `TypeError` ("can't inherit from typed named tuples")
-- require typed named tuples understood as [`@final`](https://docs.python.org/3/library/typing.html#typing.final) implicitly in [the typing specification](https://typing.python.org/en/latest/spec/)
+- state a clear requirement in [the typing specification](https://typing.python.org/en/latest/spec/) for type checkers to understand typed namedtuples as [`@final`](https://docs.python.org/3/library/typing.html#typing.final) implicitly
 
 ## Technical reasons
 
