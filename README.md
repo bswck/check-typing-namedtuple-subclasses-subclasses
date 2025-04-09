@@ -1,5 +1,7 @@
 # Make typed namedtuples final
 
+**Related: [python/typing#427](https://github.com/python/typing/issues/427)**
+
 So, all classes like `Bar` from
 
 ```py
