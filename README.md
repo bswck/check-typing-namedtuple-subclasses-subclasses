@@ -27,6 +27,8 @@ I expect this experiment to end up in
 - the class statement with inheritance from a typed namedtuple to fail with a `TypeError` ("can't inherit from typed named tuples")
 - typed named tuples understood as [`@final`](https://docs.python.org/3/library/typing.html#typing.final) implicitly
 
+## Technical reasons
+
 ### The problematic `super()`
 
 `typing.NamedTuple` subclasses' subclasses support `super()`, but [bare `typing.NamedTuple` subclasses don't.](https://github.com/python/cpython/issues/85795#issuecomment-2655270750)
