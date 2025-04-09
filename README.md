@@ -2,17 +2,30 @@
 
 _Check [`typing.NamedTuple`](https://docs.python.org/3/library/typing.html#typing.NamedTuple) subclasses' subclasses._
 
+So, all classes like `Bar` from
+
+```py
+from typing import NamedTuple
+
+class Foo(NamedTuple):
+    pass
+
+class Bar(Foo):
+    pass
+```
+
 ## Why?
 
-According to my knowledge, supporting them was never explicitly intended nor documented, and they don't work predictably.
-Therefore it is, to my mind, a good idea to not support them in Python at all.
+Supporting them was never explicitly intended nor documented.
 
-This isn't just cleanup—it’s preventing future confusion and subtle bugs in user code.
-
-### No use case
-
-While `typing.NamedTuple` subclasses' subclasses look like they inherit structure, they don’t inherit behavior—leading to broken expectations around things like constructors and `super()`.
+While they look like they inherit structure, they don’t inherit behavior—leading to broken expectations around things like constructors and `super()`.
 There’s no clear, compelling use case that isn’t better served by dataclasses or other tools.
+
+## Expected outcome
+
+I expect this experiment to end up in
+- the class statement with inheritance from a typed namedtuple to fail with a `TypeError` ("can't inherit from typed named tuples")
+- typed named tuples understood as [`@final`](https://docs.python.org/3/library/typing.html#typing.final) implicitly
 
 ### The problematic `super()`
 
