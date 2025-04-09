@@ -216,7 +216,7 @@ That's why this repo exists.
 ### Gather the data and reach out
 Check if any potentially found cases can't be refactored with negligible cost.
 
-### Decide: feasible? Not feasible?
+### Decide: feasible, not feasible?
 If feasible, open an issue in CPython/discussion in [discuss.python.org](https://discuss.python.org).
 
 ## Why do you care?
