@@ -47,7 +47,7 @@ class Point2D(NamedTuple):
     x: int
     y: int
 
-class Point3D(Foo):
+class Point3D(Point2D):
     z: int
 ```
 
