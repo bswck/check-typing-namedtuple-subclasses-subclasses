@@ -7,7 +7,12 @@ _Check [`typing.NamedTuple`](https://docs.python.org/3/library/typing.html#typin
 According to my knowledge, supporting them was never explicitly intended nor documented, and they don't work predictably.
 Therefore it is, to my mind, a good idea to not support them in Python at all.
 
-...here's exactly why.
+This isn't just cleanup—it’s preventing future confusion and subtle bugs in user code.
+
+### No use case
+
+While `NamedTuple` subclasses' subclasses look like they inherit structure, they don’t inherit behavior—leading to broken expectations around things like constructors and `super()`.
+There’s no clear, compelling use case that isn’t better served by dataclasses or other tools.
 
 ### The problematic `super()`
 
@@ -180,11 +185,6 @@ That's because:
     ```
 
     which _is_ correct and expected, because `Foo` is a namedtuple (and its metaclass is `type` as well).
-
-
-### No use case
-
-It's hard to think about a reasonable use case that specifically needs inheritance of typed named tuples.
 
 ## How?
 Since 
