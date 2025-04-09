@@ -1,7 +1,5 @@
 # Make typed namedtuples final
 
-_Check [`typing.NamedTuple`](https://docs.python.org/3/library/typing.html#typing.NamedTuple) subclasses' subclasses._
-
 So, all classes like `Bar` from
 
 ```py
@@ -13,6 +11,8 @@ class Foo(NamedTuple):
 class Bar(Foo):
     pass
 ```
+
+should be illegal.
 
 ## Why?
 
