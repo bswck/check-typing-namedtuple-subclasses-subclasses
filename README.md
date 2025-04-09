@@ -175,6 +175,8 @@ That's because:
 
     class Bar(Foo):
         y: int
+
+    print(type(Bar))  # type
     ```
 
     which _is_ correct and expected, because `Foo` is a namedtuple (and its metaclass is `type` as well).
@@ -203,7 +205,7 @@ Here's a plan how.
 ### Ask core devs?
 They may have useful insights, especially those who contributed to [python/cpython#72742](https://github.com/python/cpython/issues/72742).
 
-### Check if people do subclass `typing.NamedTuple`
+### Check if people do subclass `typing.NamedTuple` subclasses
 Stick to the similar fashion as in [PEP 765](https://peps.python.org/pep-0765/).
 
 That's why this repo exists.
