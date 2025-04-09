@@ -156,7 +156,7 @@ print(inspect.signature(Bar))
 That's because:
 
 1.  it's inherently unsupported to reuse `typing.NamedTuple` logic on such a subclass, because typed named tuples
-    can't be mixed with arbitrary bases [gh-116241](https://github.com/python/cpython/issues/116241):
+    can't be mixed with arbitrary bases ([python/cpython#116241](https://github.com/python/cpython/issues/116241)):
 
     ```py
     from typing import NamedTuple, NamedTupleMeta
