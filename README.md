@@ -201,20 +201,7 @@ That's because:
 
     which _is_ correct and expected, because `Foo` is a namedtuple (and its metaclass is `type` as well).
 
-## How?
-Since 
-```py
-class Foo(NamedTuple):
-    x: int
-
-class Bar(Foo):
-    y: int
-```
-worked for a long time, the removal of support for it should be 
-1. supported by data
-3. thought through
-
-Here's a plan how.
+## Following up
 
 ### Ask core devs?
 They may have useful insights, especially those who contributed to [python/cpython#72742](https://github.com/python/cpython/issues/72742).
