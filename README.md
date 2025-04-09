@@ -11,7 +11,7 @@ This isn't just cleanup—it’s preventing future confusion and subtle bugs in 
 
 ### No use case
 
-While `NamedTuple` subclasses' subclasses look like they inherit structure, they don’t inherit behavior—leading to broken expectations around things like constructors and `super()`.
+While `typing.NamedTuple` subclasses' subclasses look like they inherit structure, they don’t inherit behavior—leading to broken expectations around things like constructors and `super()`.
 There’s no clear, compelling use case that isn’t better served by dataclasses or other tools.
 
 ### The problematic `super()`
