@@ -197,8 +197,7 @@ class Bar(Foo):
 ```
 worked for a long time, the removal of support for it should be 
 1. supported by data
-2. gradual
-3. surgically precise
+3. thought through
 
 Here's a plan how.
 
