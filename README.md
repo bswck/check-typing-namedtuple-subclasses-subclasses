@@ -208,16 +208,9 @@ That's because:
 ### Ask core devs?
 They may have useful insights, especially those who contributed to [python/cpython#72742](https://github.com/python/cpython/issues/72742).
 
-### Check if people do subclass `typing.NamedTuple` subclasses
-Stick to the similar fashion as in [PEP 765](https://peps.python.org/pep-0765/).
+_Do you remember if it was intended to support subclasses of `typing.NamedTuple` "subclasses"?_
 
-That's why this repo exists.
-
-### Gather the data and reach out
-Check if any potentially found cases can't be refactored with negligible cost.
-
-### Decide: feasible, not feasible?
-If feasible, open an issue in CPython/discussion in [discuss.python.org](https://discuss.python.org).
+- Jelle Zijlstra: _I don't think it was_
 
 ## Why do you care?
 
