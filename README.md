@@ -215,5 +215,3 @@ _Do you remember if it was intended to support subclasses of `typing.NamedTuple`
 ## Why do you care?
 
 https://justforfunnoreally.dev/
-
-Don't get me started; it won't be fun for either side.
